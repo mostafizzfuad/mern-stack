@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <script src="https://kit.fontawesome.com/95fdc1ecce.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="padding-bottom: 200px;">
+    <!-- heading -->
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+    <!-- paragraph -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rerum doloribus esse, libero veniam maxime quod dolore illo architecto ex quaerat ea iusto suscipit, dignissimos accusantium hic, molestias aut excepturi optio! Sunt, atque sed. Mollitia
+        quasi praesentium temporibus ab voluptatum sint harum tempore nihil excepturi, iusto nemo veniam quod error.</p>
+
+    <!-- div and span -->
+    <div class="fuad">
+        <p>Lorem ipsum dolor sit amet <span style="color: red;">consectetur</span> adipisicing elit. Quidem, dicta aperiam sequi eligendi expedita molestiae laboriosam dolores laudantium alias a adipisci voluptatibus incidunt impedit sed voluptas quam. Dicta mollitia maiores nobis, voluptates magnam iusto accusamus sit saepe amet explicabo natus!</p>
+    </div>
+
+    <!-- bold -->
+    <b>This is bold text</b> <br>
+    <strong>This is bold text</strong> <br><br>
+
+    <!-- italic -->
+    <i>This is an italic text</i> <br>
+    <em>This is an italic text</em> <br>
+    <cite>This is an italic text</cite> <br>
+    <dfn>This is an italic text</dfn> <br><br>
+
+    <!-- underlined -->
+    <u>This is an underlined text</u> <br>
+    <ins>This is an underlined text</ins> <br><br>
+
+    <!-- sup -->
+    <p>a<sup>2</sup> + b<sup>2</sup></p>
+
+    <!-- sub -->
+    <p>H<sub>2</sub>O</p>
+
+    <!-- horizontal rule -->
+    <hr>
+
+    <!-- anchor -->
+    <a href="https://www.w3schools.com/" target="_blank">Click Here</a>
+
+    <!-- img -->
+    <p>
+        <img src="./images/bird.jpg" alt="bird-image">
+    </p>
+
+    <!-- note: link with image ( a > img )     
+    <a href="#">
+        <img src="" alt="">
+    </a>
+    -->
+
+    <!-- pre -->
+    <pre>
+        I was born with a
+        fragile heart
+        It's see-through
+        almost glass
+        Which is why you can see
+        Every emotion on my face
+        No matter what angle you look at me
+    </pre>
+
+    <!-- del -->
+    <p>
+        <del>Bangladesh</del> <br>
+        <s>Bangladesh</s>
+    </p>
+
+    <!-- mark , abbr , bdo -->
+    <p>
+        My name is <mark>Mostafizur</mark> <br>
+        <abbr title="Bangladesh">BD</abbr> is a small country <br>
+        <bdo dir="rtl">Mostafizur Rahman Fuad</bdo> 
+    </p>
+
+    <!-- address -->
+    <address>
+        Brac Alamdanga branch, Nowda, 70, Bondobil 7210 <br>
+        Alamdanga, Chuadanga.
+    </address>
+
+    <br><br>
+    <!-- iframe show website -->
+    <iframe src="https://www.daraz.com.bd/" width="100%" height="600"  frameborder="0"></iframe>
+
+    <br>
+    <br>
+
+    <!-- iframe - show youtube video -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1PPfOzQtLfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <br>
+    <br>
+
+    <!-- video -->
+    <video width="320" height="240" controls autoplay>
+        <source src="./media/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <br>
+    <br>
+
+    <!-- audio -->
+    <audio controls autoplay>
+        <source src="./media/sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <br>
+    <br>
+
+    
+    <!-- form , input , label -->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Fill up your Information</legend>
+            <label for="fname">First Name</label>
+            <input id="fname" type="text" placeholder="Enter Your First name" autofocus> <br><br>
+
+            <label for="lname">Last Name</label>
+            <input id="lname" type="text" placeholder="Enter Your Last name"> <br><br>
+            
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="Enter Your Email address" required> <br><br>
+
+            <label for="number">Number</label>
+            <input id="number" type="number" placeholder="Enter Your Phone number" required> <br><br>
+
+            <!-- radio -->
+            <h3>Choose Your Gender : </h3>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+
+            <!-- checkbox -->
+            <h3>Choose Your Favorite Fruit : </h3>
+            <input type="checkbox" id="apple"> 
+            <label for="apple">Apple</label>
+
+            <input type="checkbox" id="orange"> 
+            <label for="orange">Orange</label>
+
+            <input type="checkbox" id="banana"> 
+            <label for="banana">Banana</label>
+
+            <h3>Choose Your Birth Date : </h3>
+            <input type="date">
+
+            <h3>Upload your image : </h3>
+            <input type="file">
+
+            <h3>Choose Your Favorite Color : </h3>
+            <input type="color"> <br> <br>
+
+            <textarea placeholder="write your message ..." cols="30" rows="8"></textarea> <br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Send">
+        </fieldset>
+    </form>
+
+    <br>
+    <br>
+
+    <!-- select option -->
+    <label for="cars"><b>Choose a car :</b></label>
+    <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+    </select>    
+        
+
+
+    <br><br>
+
+    <!-- optgroup -->
+    <label for="clothes"><b>Choose your favorite Clothes :</b></label>
+    <select name="clothes" id="clothes">
+        <optgroup label="Male Collections">
+            <option value="Hoodie">Hoodie</option>
+            <option value="tshirt">tshirt</option>
+            <option value="caps">caps</option>
+            <option value="caps">Pants</option>
+
+        </optgroup>
+        <optgroup label="Female Collections">
+            <option value="Hoodie">Hoodie</option>
+            <option value="Shorts">Shorts</option>
+            <option value="tshirt">tshirt</option>
+            <option value="caps">caps</option>
+        </optgroup>
+    </select>     
+    
+    <br><br>
+
+    <!-- datalist -->
+    <label for="browser"><b>Choose your browser from the list :</b></label>
+    <input list="browsers" name="browser" id="browser">
+
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
+    <!-- unordered list -->
+    <!-- type attribute value : disc, circle, square [don't use]--> 
+    <ul style="list-style-type:circle">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+      
+    <ul style="list-style-type:disc">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+      
+    <ul style="list-style-type:square">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <!-- ordered list -->
+    <!-- type attribute value : 1, A, a, I, i  [use css recommend]-->
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+      
+    <ol start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol reversed>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <!-- ordered list using css property -->
+    <ol style="list-style-type:upper-roman">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        </ol>
+        
+        <ol style="list-style-type:lower-alpha">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <!-- dl>dt+dd -->
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+
+    <!-- table -->
+    <table border="1" style="border-collapse: collapse;">
+        <caption>Information Table</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fuad</td>
+                <td>25</td>
+                <td>Dhaka</td>
+                <td>01794059375</td>
+            </tr>
+            <tr>
+                <td>Fuad</td>
+                <td>25</td>
+                <td>Dhaka</td>
+                <td>01794059375</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Fuad</td>
+                <td>25</td>
+                <td>Dhaka</td>
+                <td>01794059375</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br>
+
+    <!-- table colspan and rowspan -->
+    <table border="1" style="border-collapse: collapse;">
+        <caption>Cricket Club</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Serial No</th>
+                <th colspan="2">Name</th>
+                <th rowspan="2">Fees</th>
+                <th rowspan="2">Skill</th>
+            </tr>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mostafizur</td>
+                <td>Rahman</td>
+                <td>10500</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mostafizur</td>
+                <td>Rahman</td>
+                <td>10500</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mostafizur</td>
+                <td>Rahman</td>
+                <td>10500</td>
+                <td>Batsman</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>4</td>
+                <td>Mostafizur</td>
+                <td>Rahman</td>
+                <td>10500</td>
+                <td>Batsman</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br>
+    
+    <!-- details > summary -->
+    <details>
+        <summary>BUBT</summary>
+        <p>Bangladesh University of Business and Technology or BUBT is a private university in Bangladesh, located in Mirpur, Dhaka, Bangladesh. BUBT was founded in 2003 under the Private University Act 1992 and was approved by the University Grants Commission and the Ministry of Education, Government of Bangladesh.</p>
+    </details>
+
+    <!-- blockquote -->
+    <p>Here is a quote from BUBT's website :</p>
+    <blockquote cite="https://www.bubt.edu.bd/">
+        Bangladesh University of Business and Technology or BUBT is a private university in Bangladesh, located in Mirpur, Dhaka, Bangladesh. BUBT was founded in 2003 under the Private University Act 1992 and was approved by the University Grants Commission and the Ministry of Education, Government of Bangladesh.
+    </blockquote>
+
+    <!-- q -->
+    <p>
+        <q>The purpose of our lives is to be happy.</q>
+    </p>
+
+
+    <!-- font awesome -->
+    <!-- 
+        1. <script src="https://kit.fontawesome.com/95fdc1ecce.js" crossorigin="anonymous"></script>  (place the link in head tag)
+        2. https://fontawesome.com/search  (search icon) 
+    -->
+
+    <p style="font-size: 80px; color: blue;">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-user"></i>
+    </p>
+
+</body>
+
+</html>
