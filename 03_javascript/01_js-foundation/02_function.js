@@ -128,7 +128,7 @@ const doMathUltraProMax = (x, y) => x * y
 console.log(doMathUltraProMax(10, 20))
 
 
-// function calling function
+// function calling function (interview question)
 function fruitCutter(fruit) {
     return fruit * 4
 }
