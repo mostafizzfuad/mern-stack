@@ -145,5 +145,24 @@ console.log(juiceMaker(15, 10))
 // side effect of a function : function ta return korar age kotobar queue te chilo. example : juiceMaker() function ta call korar por return howar age 2 bar queue te chilo. karon, fruitCutter() function ta 2 bar call hoye return korece. then juiceMaker() function ta return korece. same vabe fruitCutter() function ta 0 times queue te chilo. so fruitCutter() function side effect = 0
 
 
-// brick calculation : 59.04 seconds
-// hello
+
+// brick calculation : 
+/****
+ * underground = 50000
+ * 1st to 10th = 10000 per flooor
+ * 11th floor = 12000
+ * 12th to 21st = 10000 per flooor
+ * 22th floor = 12000
+ * 
+ * 73 floor porjonto total koto brick lagbe ?
+ ****/
+
+function brickCalculation(totalFloors) {
+    const undergroundBricks = 50000
+    let brickForAllFloors = totalFloors * 10000
+    const extraFLoors = Math.trunc(totalFloors / 11) 
+    const extraBricks = extraFLoors * 2000
+    brickForAllFloors += extraBricks
+    return `total bricks needed : ${undergroundBricks + brickForAllFloors}`
+}
+console.log(brickCalculation(73))
