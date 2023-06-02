@@ -128,7 +128,7 @@ const doMathUltraProMax = (x, y) => x * y
 console.log(doMathUltraProMax(10, 20))
 
 
-// function calling function (interview question)
+// function calling function or callBack function (interview question)
 function fruitCutter(fruit) {
     return fruit * 4
 }
@@ -166,3 +166,26 @@ function brickCalculation(totalFloors) {
     return `total bricks needed : ${undergroundBricks + brickForAllFloors}`
 }
 console.log(brickCalculation(73))
+
+
+// currying function
+function multi(a) {
+    // যেই ফাংশানের কোনো পরিচয় বা নাম নেই সেটাই Anonymous function
+    return function (b) { 
+        return function (c) {
+            return function (x) {
+                return function (y) {
+                    return a * b * c * x * y
+                }
+            }
+        }
+    }
+}
+console.log(multi(10)(5)(3)(2)(5))
+
+// currying using arrow functions : lambda calculus or lambda function declarations
+const multiPro = (a) => (b) => (c) => (x) => (y) => a * b * c * x * y
+console.log(multiPro(10)(5)(3)(2)(5))
+
+const multiProUltra = (a, b, c, x, y) => a * b * c * x * y
+console.log(multiProUltra(10, 5, 3, 2, 5))
