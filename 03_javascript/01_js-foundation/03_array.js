@@ -20,12 +20,19 @@ console.log(years)
 
 // finding elements in array by index
 console.log(years[2])
-console.log(years[5]) // undefined
+console.log(years[5]) // undefined : because 5 no index e kono value nei
+console.log(years[years.length - 1]) // find last element in array
  
+// array muted / re-assigned elements
+years[1] = 1998
+console.log(years[1])
 
 // array length
 console.log(friends.length)
 console.log(years.length)
+
+// type of array
+console.log(typeof years)
 
 
 // exercise
@@ -70,6 +77,7 @@ console.log(lastBenchers.indexOf('Junnun'))
 console.log(lastBenchers.indexOf('Mostafizur'))
 console.log(lastBenchers.indexOf('Rifat')) // jei element er index amra find korte chacchi sei element jodi array te na thake tahole tar index dekhabe -1
 
+// finding element : element jodi thake tahole result true otherwise false
 console.log(lastBenchers.includes('Siam')) // true
 console.log(lastBenchers.includes('Rifat')) // false
 

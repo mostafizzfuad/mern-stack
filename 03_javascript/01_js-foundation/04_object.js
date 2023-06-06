@@ -36,3 +36,26 @@ if (student[interestIn]) {
 }
 *************************/
 
+const collageStudent = {
+    firstName : 'Eishita',
+    lastName : 'Afrin',
+    birthYear : 1998,
+
+    calculateAge : function() {
+        return 2023 - this.birthYear // method ke je call kore, this keyword take indicate kore [method je call korbe this tar]
+    },
+
+    greetings : function() {
+        return `Hello ${this.firstName}`
+    }
+}
+
+console.log(collageStudent.calculateAge()) // [method je call korbe this tar, jemon : akhane calculateAge() method ke collageStudent object ta call korece, tai this keyword ta akhane collageStudent object ke indicate korce]
+console.log(collageStudent.greetings())
+
+// when we will change collageStudent2.property . it's also change the collageStudent.property (collageStudent2 object ta collageStudent er reference hisebe memory te kaj korce)
+const collageStudent2 = collageStudent
+collageStudent2.firstName = 'Irina'
+console.log(collageStudent)
+console.log(collageStudent2)
+console.log(collageStudent2.greetings()) // function er this keyword akhn collageStudent2 ke indicate korteche
