@@ -39,6 +39,7 @@ console.log(addThreeNumbers(1, 11, 2)) // function jodi return na kore and sei f
 
 
 /************ function expression (type 2) *************/
+// function er name ke variable baniye dilei function expression hoye jabe.
 const juiceFactory = function (apples, oranges) {
     const juice = (apples * oranges) / 2
     return `Juice is ready using ${apples} apples and ${oranges} oranges.`
@@ -48,7 +49,7 @@ console.log(juiceFactory(10, 5))
 
 // function declarations : function er upore ba niche jekono jaigai console log kora jabe.
 // function expression : function er upore sei function ke call dewa jabe na karon, function expression just like variable
-// arrow function : function expression er moto kaj korbe
+// arrow function : function expression er moto kaj korbe. arrow function e this keyword related akta problem ache. tai kichu kichu jaigai arrow function ke avoid kora lagbe.
 
 /************ arrow function (type 3) *************/
 const juiceFactory2 = (apples, oranges) => {
@@ -182,6 +183,19 @@ function multi(a) {
     }
 }
 console.log(multi(10)(5)(3)(2)(5))
+
+function multiplication(a) {
+    return function (b) { 
+        return function (c, m, n) {
+            return function (x) {
+                return function (y) {
+                    return a * b * c * x * y * m * n
+                }
+            }
+        }
+    }
+}
+console.log(multiplication(10)(5)(3,2,4)(2)(5))
 
 // currying using arrow functions : lambda calculus or lambda function declarations
 const multiPro = (a) => (b) => (c) => (x) => (y) => a * b * c * x * y

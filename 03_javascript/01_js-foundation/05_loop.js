@@ -22,7 +22,7 @@ for (let i = 0; i < friendsArr.length; i++) {
     console.log(friendsArr[i])
 }
 
-// print sum these numbers
+// sum of array elements using for loop
 const evenNumbers = [2, 4, 6, 8, 10, 12, 14, 16]
 let sum = 0
 for (let i = 0; i < evenNumbers.length; i++) {

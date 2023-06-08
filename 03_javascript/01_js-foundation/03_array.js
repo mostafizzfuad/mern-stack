@@ -49,7 +49,7 @@ console.log(age2) // 2023 - undefined = NaN
 
 
 
-// array push, unshift, pop, shift
+// array push, unshift, pop, shift, indexOf, includes
 const lastBenchers = ['Siam', 'Mostafizur', 'Junnun', 'Rasel', 'Sakib']
 console.log(lastBenchers)
 console.log(lastBenchers.length)

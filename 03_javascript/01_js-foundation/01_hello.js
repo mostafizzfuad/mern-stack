@@ -5,6 +5,9 @@ console.log('Hello JS')
 console.log(`Hello JS`)
 
 // variables : let varName = value;  [don't use var keyword for declaration a variable & use camelCase for variable names]
+// let and const - block scope
+// var - function scope
+
 let myName = 'Mostafizur Rahman'
 console.log('Hello ' + myName) // string concatenation
 console.log(`Hello ${myName}`) // template literal : backtick
@@ -16,8 +19,34 @@ and
 I am a
 developer`)
 
+// no keyword using variable
+likes = 150
+console.log(likes) // its working but this type of variable cannot create a scope
+
+// variable naming restrictions
+// let 10cars = 10
+// let me&you = 'love'
+// let function = 10
+// let false = 10
+// let player-number = 10
+// let Classroom = 'A3 [Class declarations of Js type]
+// let age1 = 21 (not error but don't use)
+
 
 // data types : (value has type, not variable)
+/***** data types : (premitive , non-premitive)
+ * premitive types :
+ * 1. number
+ * 2. string
+ * 3. boolean
+ * 4. null
+ * 5. undefined : variable declare kora hoiche but value assign kora hoini
+ * 6. symbol
+ * 7. bigInt
+ * ********************/
+
+
+
 // typeof varName : (variable er datatype janar jonno use kora hoi)
 // kono variable er value null , but typeof diye sei variable check korle dataType dekhabe object. this is a bug.
 let age = null
@@ -32,14 +61,43 @@ console.log(myAge)
 
 // arithmetics operator
 // assignment operator
-// comparison operator
+// comparison operator (< , <= , > , >=)
 
 // if else : multiple output dorkar hole sudhu if , single output dorkar hole else if use korbo
+const mangoPrice = 60
+const applePrice = 80
+
+if (mangoPrice <= 100) {
+    console.log('Mango khabo')
+} if (applePrice <= 100) {
+    console.log('Apple khabo')
+}
+console.log('\n')
+// differences between if and else if
+if (mangoPrice <= 100) {
+    console.log('Amm khabo')
+} else if (applePrice <= 100) {
+    console.log('App khabo')
+}
+console.log('\n')
+// differences between if and else
+if (mangoPrice <= 50) {
+    console.log('Amm khabo')
+} else {
+    console.log('Apple khabo')
+}
 
 // grade calculation program
 
 
 // type conversion (manually) and coercion (autometically)
+
+// type conversion (manually)
+const aa = '10'
+const bb = 20
+console.log(typeof Number(aa))
+console.log(typeof String(bb))
+ 
 console.log(10 + 10)
 console.log(20 - 10)
 console.log(20 * 5)
@@ -53,11 +111,12 @@ console.log('Baby' / 20)
 console.log('Baby' + ' ' + 'Babu')
 console.log('Baby' - ' ' - 'Babu')
 
+// coercion (autometically)
 console.log(200 - '100') // coercion (autometically)
 console.log(200 * '100') // coercion (autometically)
 console.log(200 / '100') // coercion (autometically)
 console.log('200' + 100)
-// note : + and string thakle som kichu string banabe.
+// note : + and string thakle sob kichu string banabe.
 
 
 // game 1
@@ -102,6 +161,11 @@ console.log(Boolean(' '))
  * == or === (equality)
  * != or !== (not equal)
  */
+console.log('\n')
+console.log(10 == '10')
+console.log(10 === '10')
+console.log(10 != '10')
+console.log(10 !== '10')
 
 // example 
 const siamAge = '21'
@@ -156,6 +220,12 @@ if( pocketMoney >= 100 && timeLeft >= 5) {
  * statement : statement cann't produce values, only manipulates expression
  * 
  */
+
+// ternary operator: find large between two numbers
+const num1 = 40
+const num2 = 60
+const whoIsGreater = num1 > num2 ? `${num1} large` : `${num2} large`
+console.log(whoIsGreater)
 
 
 // js CT question

@@ -1,4 +1,4 @@
-// object declaration : literal
+// object declaration : literal syntax
 const student = {
     firstName: 'Mostafizur',
     lastName: 'Rahman',
@@ -55,7 +55,7 @@ console.log(collageStudent.greetings())
 
 // when we will change collageStudent2.property . it's also change the collageStudent.property (collageStudent2 object ta collageStudent er reference hisebe memory te kaj korce)
 const collageStudent2 = collageStudent
-collageStudent2.firstName = 'Irina'
+collageStudent2.firstName = 'Irina' // muted or re-assigned
 console.log(collageStudent)
 console.log(collageStudent2)
 console.log(collageStudent2.greetings()) // function er this keyword akhn collageStudent2 ke indicate korteche
