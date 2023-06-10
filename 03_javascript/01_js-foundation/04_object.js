@@ -42,11 +42,12 @@ const collageStudent = {
     birthYear : 1998,
 
     calculateAge : function() {
-        return 2023 - this.birthYear // method ke je call kore, this keyword take indicate kore [method je call korbe this tar]
+        return 2023 - this.birthYear // method ke je call kore, this keyword take indicate kore [method je call korbe this tar] 
+        /// arrow function doesn't have this keyword
     },
 
     greetings : function() {
-        return `Hello ${this.firstName}`
+        return `Hello ${this.firstName}` /// arrow function doesn't have this keyword
     }
 }
 
@@ -59,3 +60,11 @@ collageStudent2.firstName = 'Irina' // muted or re-assigned
 console.log(collageStudent)
 console.log(collageStudent2)
 console.log(collageStudent2.greetings()) // function er this keyword akhn collageStudent2 ke indicate korteche
+
+
+
+
+
+/// arrow function doesn't have this keyword
+/// regular function er moddhe this undefined
+/// object er moddhe this keyword available. so, object er moddhe kokhonoi arrow function use kora jabe na.
