@@ -111,4 +111,33 @@ container.innerHTML = `
 
 // add attribute
 const h1 = document.querySelector('#mini-heading')
-h1.setAttribute('class', 'main-heading')
+// h1.setAttribute('class', 'main-heading') // set attribute width value
+// h1.setAttribute('width', '300px') // set attribute width value
+// console.log(h1.getAttribute('width')) // show attribute's value
+// h1.removeAttribute('class') // remove attribute
+// h1.removeAttribute('width') // remove attribute
+
+h1.classList.add('main-heading') // add class attribute with value
+h1.classList.add('first-heading') // add class attribute with value
+// h1.classList.add('main-heading', 'first-heading') // two in one
+h1.classList.remove('main-heading') // remove class attribute with value
+
+// toggle : akbar add => akbar remove
+const a = 10
+if (a === 10) h1.classList.toggle('main-heading') // if a===10 then add main-heading
+
+console.log(h1.classList.contains('mini-heading')) // false
+console.log(h1.classList.contains('main-heading')) // true
+
+let b = 10
+if (h1.classList.contains('main-heading')) b += 5
+console.log(b) // 15
+
+
+// remove elements 
+// const h2 = document.getElementById('second-heading')
+// h2.remove() // don't do this
+
+
+
+/****** 4. node traversal ********/
