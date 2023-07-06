@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underline hover element using PseudoElement</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #222;
+        }
+        ul {
+            text-align: center;
+            padding: 20px;
+        }
+        ul a {
+            text-decoration: none;
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 1.3rem;
+            margin: 20px;
+            transition: color 0.2s linear;
+            position: relative;
+        }
+        ul a:hover {
+            color: rgb(0, 174, 214);
+        }
+        /* create underline */
+        ul a::after {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            content: "";
+            width: 0;
+            height: 3px;
+            border-radius: 2px;
+            background-color: rgb(0, 174, 214);
+            transition: all 0.2s linear;
+        }
+        ul a:hover::after {
+            width: 100%;
+        }
+        /* h1 */
+        h1::before {
+            content: "WOW ! ";
+        }
+        h1::after {
+            content: " BD";
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Order</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </ul>
+    </nav>
+    <h1>Hello</h1>
+</body>
+</html>
