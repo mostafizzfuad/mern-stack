@@ -63,7 +63,7 @@ for (let i = 0; i < countries.length; i++) {
 
 
 /****** 3. creating elements ********/
-const ul = document.querySelector('ul')
+// const ul = document.querySelector('ul')
 
 const li = document.createElement('li')
 const li2 = document.createElement('li')
@@ -72,8 +72,8 @@ li.textContent = 'Srilanka'
 li2.textContent = 'Japan'
 // ul.append(li)
 // ul.appendChild(li)
-ul.insertAdjacentElement('beforeend', li)
-ul.insertAdjacentElement('beforeend', li2)
+// ul.insertAdjacentElement('beforeend', li)
+// ul.insertAdjacentElement('beforeend', li2)
 // ul.insertAdjacentElement('beforebegin', li)
 // ul.insertAdjacentElement('afterend', li) 
 // ul.insertAdjacentElement('afterbegin', li)
@@ -141,3 +141,39 @@ console.log(b) // 15
 
 
 /****** 4. node traversal ********/
+const ul = document.querySelector('ul')
+
+console.log(ul.parentElement)
+console.log(ul.parentNode)
+console.log(ul.childNodes)
+console.log(ul.children)
+console.log(ul.firstChild)
+console.log(ul.lastChild)
+console.log(ul.firstElementChild)
+console.log(ul.lastElementChild)
+// siblings
+const heading1 = document.querySelector('#mini-heading')
+console.log(heading1.nextSibling)
+console.log(heading1.nextElementSibling)
+console.log(heading1.previousSibling)
+console.log(heading1.previousElementSibling)
+
+
+
+/******** 5. event handlers ********/
+// event handler : higher order function (jara callback function ke argument hisebe nay)
+// jei button e click korbo, sei button e event handler add hbe
+const btn2 = document.querySelector('.btn')
+const input2 = document.querySelector('.input')
+const ul2 = document.querySelector('ul')
+
+// btn2.addEventListener(eventType, callbackFunction)
+btn2.addEventListener('click', function() {
+    // console.log('clicked')
+    const li = document.createElement('li') // create element
+    li.classList.add('country') // add class into element
+    li.textContent = input2.value // always string
+    // li.textContent = Number(input2.value) * 2 // convert number
+    ul2.append(li) // append element
+    input2.value = '' // clear input field
+}) 
