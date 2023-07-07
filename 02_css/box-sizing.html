@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        .box1 {
+            width: 300px;
+            height: 400px;
+            background-color: crimson;
+            margin-bottom: 15px;
+            border: 10px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .box2 {
+            width: 300px;
+            height: 400px;
+            background-color: tomato;
+            margin-bottom: 15px;
+        }
+        .box3 {
+            width: 300px;
+            height: 400px;
+            background-color: aqua;
+            border: 10px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>use box-sizing and border with padding</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem ex soluta sed totam neque consequatur voluptate accusantium. Nemo repellendus sunt, et beatae exercitationem expedita reiciendis rem id. Tempore, sed.</p>
+    </div>
+    <div class="box2">
+        <h1>don't use box-sizing and border</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem ex soluta sed totam neque consequatur voluptate accusantium. Nemo repellendus sunt, et beatae exercitationem expedita reiciendis rem id. Tempore, sed.</p>
+    </div>
+    <div class="box3">
+        <h1>don't use box-sizing but it's using border</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem ex soluta sed totam neque consequatur voluptate accusantium. Nemo repellendus sunt, et beatae exercitationem expedita reiciendis rem id. Tempore, sed.</p>
+    </div>
+</body>
+</html>
