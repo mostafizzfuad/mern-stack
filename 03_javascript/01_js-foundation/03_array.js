@@ -67,7 +67,7 @@ lastBenchers.pop() // array pop - remove element from the end
 console.log(lastBenchers)
 console.log(lastBenchers.length)
 
-lastBenchers.shift() // remove element from the beginning
+lastBenchers.shift() // array shift - remove element from the beginning
 console.log(lastBenchers)
 console.log(lastBenchers.length)
 
