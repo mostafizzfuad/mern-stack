@@ -28,22 +28,24 @@
         ul a:hover {
             color: rgb(0, 174, 214);
         }
-        /* create underline */
+        /******** create underline ********/
         ul a::after {
+            content: "";
             position: absolute;
             bottom: -5px;
             left: 0;
-            content: "";
+            /* width: 100%; */
             width: 0;
             height: 3px;
             border-radius: 2px;
             background-color: rgb(0, 174, 214);
-            transition: all 0.2s linear;
+            /* transition: all 0.2s linear; */
+            transition: all 0.2s cubic-bezier(.65, -1.13, 0.3, 2.18);
         }
         ul a:hover::after {
             width: 100%;
         }
-        /* h1 */
+        /******** h1 ********/
         h1::before {
             content: "WOW ! ";
         }
@@ -62,6 +64,7 @@
             <a href="#">Contact</a>
         </ul>
     </nav>
+    <!-- test pseudo-element -->
     <h1>Hello</h1>
 </body>
 </html>
