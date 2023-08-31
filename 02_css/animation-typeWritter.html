@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Writter Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        h1 {
+            color: #444;
+            position: relative;
+            /* background-color: aqua; */
+            display: inline-block;
+            margin-top: 300px;
+        }
+        h1::before,
+        h1::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        h1::before {
+            background-color: antiquewhite;
+            animation: typewritter 5s steps(29);
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+        }
+        h1::after {
+            width: 0.1em;
+            background-color: #444;
+            animation: typewritter 5s steps(29) forwards 1s, blink 0.75s linear infinite;
+        }
+        @keyframes typewritter {
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes blink {
+            to {
+                background-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, My name is Mostafizur.</h1>
+</body>
+</html>
