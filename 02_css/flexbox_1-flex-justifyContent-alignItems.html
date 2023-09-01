@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: azure;
+        }
+        .container {
+            width: 900px;
+            height: 500px;
+            background-color: midnightblue;
+            margin: 100px auto 0;
+            border-radius: 5px;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            justify-content: center;
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            align-items: center;
+
+            /* don't use height in child class for stretch */
+            /* align-items: stretch; */
+            /* align-items: baseline; */
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: lightskyblue;
+            border-radius: 5px;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item one">1</div>
+        <div class="item two">2</div>
+        <div class="item three">3</div>
+        <div class="item four">4</div>
+    </div>
+</body>
+</html>
