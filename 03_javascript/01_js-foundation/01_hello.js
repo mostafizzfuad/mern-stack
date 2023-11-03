@@ -1,5 +1,9 @@
 // JS : JS is a high level , multi paradine, interprated, object oriented, functional programming language.
 
+// JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997. ECMAScript is the official name of the language. ECMAScript versions have been abbreviated to ES1, ES2, ES3, ES5, and ES6.
+
+// ECMA : European Computer Manufacturers Association.
+
 console.log("Hello JS")
 console.log('Hello JS')
 console.log(`Hello JS`)
@@ -7,6 +11,14 @@ console.log(`Hello JS`)
 // variables : let varName = value;  [don't use var keyword for declaration a variable & use camelCase for variable names]
 // let and const - block scope
 // var - function scope
+
+// don't use this type of variableName : 
+    // let 10world = 'hello world'
+    // let bf&gf = 'unknown'
+    // let new-number = 10
+    // let function = 20; // any keyword
+    // let Person = 'mostafizur' // only class name declaration e variable name capitalize use kora hoi
+
 
 let myName = 'Mostafizur Rahman'
 console.log('Hello ' + myName) // string concatenation
@@ -23,17 +35,18 @@ developer`)
 likes = 150
 console.log(likes) // its working but this type of variable cannot create a scope
 
-// variable naming restrictions
-// let 10cars = 10
-// let me&you = 'love'
-// let function = 10
-// let false = 10
-// let player-number = 10
-// let Classroom = 'A3 [Class declarations of Js type]
-// let age1 = 21 (not error but don't use)
+// variable naming restrictions : 
+    // let 10cars = 10
+    // let me&you = 'love'
+    // let function = 10 // any keyword
+    // let false = 10 // any keyword
+    // let player-number = 10
+    // let Classroom = 'A3' (only class name declaration e variable name capitalize hisebe use kora hoi)
+    // let age1 = 21 (not error but don't use)
 
 
-// data types : (value has type, not variable)
+// data types : (value has type, not variable. variable just a name)
+
 /***** data types : (premitive , non-premitive)
  * premitive types :
  * 1. number
@@ -45,6 +58,11 @@ console.log(likes) // its working but this type of variable cannot create a scop
  * 7. bigInt
  * ********************/
 
+let movieRating = 7.8
+let movieName = 'Mujib'
+let isRaining = true
+let carSpeed = null
+let herAge // typeof herAge : undefined
 
 
 // typeof varName : (variable er datatype janar jonno use kora hoi)
@@ -58,10 +76,15 @@ console.log(typeof Number('I love you'))
 const myAge = 25
 console.log(myAge)
 
+// ---------------- JS (2)---------------------- //
 
-// arithmetics operator
-// assignment operator
+// arithmetics operator (+ - * / % ** ++ --)
+// assignment operator (= += -= *= /= %=)
 // comparison operator (< , <= , > , >=)
+
+// operator precedence
+console.log(30 + (10 - 5) * 2) // 40
+console.log(2024 > 2002 + 30) // false
 
 // if else : multiple output dorkar hole sudhu if , single output dorkar hole else if use korbo
 const mangoPrice = 60
@@ -72,14 +95,18 @@ if (mangoPrice <= 100) {
 } if (applePrice <= 100) {
     console.log('Apple khabo')
 }
+
 console.log('\n')
+
 // differences between if and else if
 if (mangoPrice <= 100) {
     console.log('Amm khabo')
 } else if (applePrice <= 100) {
     console.log('App khabo')
 }
+
 console.log('\n')
+
 // differences between if and else
 if (mangoPrice <= 50) {
     console.log('Amm khabo')
@@ -93,23 +120,34 @@ if (mangoPrice <= 50) {
 // type conversion (manually) and coercion (autometically)
 
 // type conversion (manually)
-const aa = '10'
-const bb = 20
-console.log(typeof Number(aa))
-console.log(typeof String(bb))
- 
+const str = '10'
+const num = 20
+const isGood = true
+
+console.log(str, typeof Number(str))
+console.log(typeof Number("500"))
+console.log(typeof Number("Fuad"))
+
+console.log(typeof String(num))
+console.log(typeof String(isGood))
+
+console.log(typeof NaN) // number
+
+
+
+// -------------------------------- //
 console.log(10 + 10)
 console.log(20 - 10)
 console.log(20 * 5)
 console.log(20 / 3)
 console.log(20 % 3)
 
-console.log('Baby' + 20)
-console.log('Baby' - 20)
-console.log('Baby' * 20)
-console.log('Baby' / 20)
+console.log('Baby' + 20) // Baby20
+console.log('Baby' - 20) // NaN
+console.log('Baby' * 20) // NaN
+console.log('Baby' / 20) // NaN
 console.log('Baby' + ' ' + 'Babu')
-console.log('Baby' - ' ' - 'Babu')
+console.log('Baby' - ' ' - 'Babu') // NaN
 
 // coercion (autometically)
 console.log(200 - '100') // coercion (autometically)
@@ -122,23 +160,23 @@ console.log('200' + 100)
 // game 1
 let a = '1' + 1
 a -= 1
-console.log(a)
+console.log(a) // 10
 
 // game 2
 let x = 2 + 3 + 4 + '5'
 x += 5
-console.log(x)
+console.log(x) // 955
 
 // game 3
 let y = '10' - '5' - '3' - 2 + '5'
 y -= 10
-console.log(y)
+console.log(y) // -5
 
 // game 4
 let z = 1 + 1 - 1 - '1' + '10' - 20
 z += '10'
 z--
-console.log(z)
+console.log(z) // -1011
 
 
 
