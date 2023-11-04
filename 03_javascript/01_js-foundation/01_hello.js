@@ -179,6 +179,8 @@ z--
 console.log(z) // -1011
 
 
+// ---------------- JS (3)---------------------- //
+
 
 // truthy value and falsy value
 // falsy value : 0 , '' , undefined , null , NaN
@@ -190,7 +192,20 @@ console.log(Boolean(NaN))
 
 // truthy value
 console.log(Boolean(1))
+console.log(Boolean(-1))
 console.log(Boolean(' ')) 
+console.log(Boolean('hello')) 
+console.log(Boolean({})) 
+
+
+// example of truthy and falsy value
+let money = 10
+if (money) {
+    console.log('I have money')
+} else {
+    console.log('I have no money')
+}
+
 
 
 // equality operator
@@ -219,7 +234,13 @@ if (siamAge === 21) { // js doesn't type coercion, strict
 } else {
     console.log('He is child')
 }
- 
+
+
+// input in js 
+/* const favoriteNumber = Number(prompt('What is your favorite number ?'))
+console.log(favoriteNumber) */
+
+
 // nasted condition
 
 
@@ -241,13 +262,24 @@ if (ownHouse && saveMoney >= 200000 || hasBusiness) {
 const pocketMoney = 200
 const timeLeft = 5
 
-if( pocketMoney >= 100 && timeLeft >= 5) {
+if (pocketMoney >= 100 && timeLeft >= 5) {
     console.log('Burger khaite parba')
 } else {
     console.log('Burger khaite parba na')
 }
 
 // example 3 : leap year program
+/* 
+year % 400 === 0
+year % 4 === 0 && year % 100 !== 0
+*/
+let year = 2024
+if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+    console.log('leap year')
+} else {
+    console.log('not leap year')
+}
+
 
 // switch case
 
@@ -259,11 +291,22 @@ if( pocketMoney >= 100 && timeLeft >= 5) {
  * 
  */
 
+// expression
+let result = 10 - 2 * 3; // produce value
+
+// statement
+if (result === 0){} // cann't produce value
+
+
 // ternary operator: find large between two numbers
 const num1 = 40
 const num2 = 60
 const whoIsGreater = num1 > num2 ? `${num1} large` : `${num2} large`
 console.log(whoIsGreater)
+
+// example 2 : ternary operator
+let yourNumber = 500
+yourNumber === 100 ? console.log(yourNumber += 100) : console.log(yourNumber -= 100)
 
 
 // js CT question
