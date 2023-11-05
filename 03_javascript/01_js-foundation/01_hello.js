@@ -316,3 +316,29 @@ yourNumber === 100 ? console.log(yourNumber += 100) : console.log(yourNumber -= 
  * difference between null and undefined types of js ?
  * 
  */
+
+
+// what is type conversion and type coercion in js ?
+
+// type conversion
+const myNumber = '50'
+console.log(Number(myNumber)) // string to number manually conversion
+
+// type coercion
+console.log('50' - 10) // string to number automatically conversion
+
+
+
+// defference between (if .. else if ... else) and (if ... if ... else)
+// if .. else if ... else : only single statement executed
+// if ... if ... else : single or multiple statements executed
+
+
+
+// difference between null and undefined types of js ?
+
+let myPhone;
+console.log(typeof myPhone) // undefined : variable value not assigned
+
+let myPhoneNumber = null; // null : variable value assign as null
+

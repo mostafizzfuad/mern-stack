@@ -3,12 +3,19 @@
 // const interface = 'audio'
 // console.log(private)
 
+
+// function declarations
+// function expression
+// arrow function
+
+
 fuad()
 
 /********* function declarations (type 1)  ***********/
 function fuad() {
     console.log('Hello Masud')
 }
+// fuad()
 
 function addTwoNumbers(num1, num2) {
     const sum = num1 + num2
@@ -26,7 +33,8 @@ function oddNumberFinder(number) { // number = parameter
     }
 } 
 console.log(oddNumberFinder(15)) // function call / run / invoke [15 = argument]
-
+// function e jodi return keyword use kora hoi, but function jodi return korar jonno kichu khuje na pai, tahole undefined return korbe.
+// function return keyword pele okhanei return kore dei, nicher line gula ar execute korena...
 
 // sum of three numbers
 function addThreeNumbers(a, b, c) {
