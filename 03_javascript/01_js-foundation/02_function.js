@@ -48,30 +48,45 @@ console.log(addThreeNumbers(1, 11, 2)) // function jodi return na kore and sei f
 
 /************ function expression (type 2) *************/
 // function er name ke variable baniye dilei function expression hoye jabe.
+// console.log(juiceFactory(5, 7)) // undefined
 const juiceFactory = function (apples, oranges) {
     const juice = (apples * oranges) / 2
-    return `Juice is ready using ${apples} apples and ${oranges} oranges.`
+    return `${juice} cup Juice is ready using ${apples} apples and ${oranges} oranges.`
 }
 console.log(juiceFactory(10, 5))
 
+// function expression like variables
+/* console.log(a) // undefined
+let a = 20  */
+
 
 // function declarations : function er upore ba niche jekono jaigai console log kora jabe.
+
 // function expression : function er upore sei function ke call dewa jabe na karon, function expression just like variable
-// arrow function : function expression er moto kaj korbe. arrow function e this keyword related akta problem ache. tai kichu kichu jaigai arrow function ke avoid kora lagbe.
+
+// arrow function : function expression er moto kaj korbe. function keyword ta kete dibo then parameter er pore () => use korbo. arrow function e this keyword related akta problem ache. tai kichu kichu jaigai arrow function ke avoid kora lagbe.
 
 /************ arrow function (type 3) *************/
 const juiceFactory2 = (apples, oranges) => {
     const juice = (apples * oranges) / 2
-    return `Juice is ready using ${apples} apples and ${oranges} oranges.`
+    return `${juice} cup Juice is ready using ${apples} apples and ${oranges} oranges.`
 }
 console.log(juiceFactory2(10, 5))
 
 
 
-// arrow function
-// const ageCalculator = (birthYear) => 2023 - birthYear
-// console.log(ageCalculator(1998))
+// arrow function example :: 
 
+// likhar type 1
+/* const ageCalculators = (birthYear) => {
+    return 2023 - birthYear
+} */
+// likhar type 2
+const ageCalculators = (birthYear) => 2023 - birthYear
+
+console.log(ageCalculators(1998)) // invoke ageCalculators function
+
+// arrow functions + ternary operators
 const ageCalculator = (birthYear) => (2023 - birthYear) >= 18 ? 'You are adult' : 'You are not adult'
 console.log(ageCalculator(1998))
 
@@ -85,7 +100,7 @@ const heroMaker = (age, skill) => {
 }
 console.log(heroMaker(22, true))
 
-
+// one line using ternary operator
 const heroMaker2 = (age, skill) => (age >= 18 && skill) ? 'You can be a superhero' : 'You can not be a superhero'
 console.log(heroMaker2(22, true))
 
@@ -123,7 +138,7 @@ const doMath = (a, b, c) => {
     const y = x * c
     return y
 }
-console.log(doMath(13, 21, 78))
+console.log(doMath(3, 2, 7))
 
 
 // arrow functions example 2
@@ -137,7 +152,7 @@ const doMathUltraProMax = (x, y) => x * y
 console.log(doMathUltraProMax(10, 20))
 
 
-// function calling function or callBack function (interview question)
+// function calling function (interview question)
 function fruitCutter(fruit) {
     return fruit * 4
 }
@@ -151,16 +166,16 @@ function juiceMaker(apples, oranges) {
 }
 console.log(juiceMaker(15, 10))
 
-// side effect of a function : function ta return korar age kotobar queue te chilo. example : juiceMaker() function ta call korar por return howar age 2 bar queue te chilo. karon, fruitCutter() function ta 2 bar call hoye return korece. then juiceMaker() function ta return korece. same vabe fruitCutter() function ta 0 times queue te chilo. so fruitCutter() function side effect = 0
+// side effect of a function : kono function call/invoke korar por function ta return korar age kotobar queue te chilo, setai hocche oi function er side effect. example : juiceMaker() function ta call korar por return howar age 2 bar queue te chilo. karon, fruitCutter() function ta 2 bar call hoye return korece. then juiceMaker() function ta return korece. same vabe fruitCutter() function ta 0 times queue te chilo. so fruitCutter() function side effect = 0
 
 
 
 // brick calculation : 
 /****
  * underground = 50000
- * 1st to 10th = 10000 per flooor
+ * 1st to 10th = 10000 per floor
  * 11th floor = 12000
- * 12th to 21st = 10000 per flooor
+ * 12th to 21st = 10000 per floor
  * 22th floor = 12000
  * 
  * 73 floor porjonto total koto brick lagbe ?
