@@ -35,7 +35,7 @@ console.log(years.length)
 console.log(typeof years)
 
 
-// exercise
+// exercise 1
 const birthYears = [1998, 2000, 2001, 2002]
 const ageCalculation = function (birthYear) {
     return 2023 - birthYear
@@ -88,7 +88,7 @@ if (lastBenchers.includes('Siam')) {
     console.log('Unknown')
 }
 
-// exercise using indexof()
+// exercise using indexof() : alternative
 if (lastBenchers.indexOf('Siam') !== -1) {
     console.log('He is our Sheikh')
 } else {
@@ -105,7 +105,7 @@ if (lastBenchers.indexOf('Siam') !== -1) {
  * dragonsClub (18, 13, 10, 8, 12)
  * 
  * conditions : 
- * winner : average jump distance >= 15
+ * winner : score > oposite team , average jump distance >= 15
  * draw : lionsClub === dragonsClub , both team has >= 15
  ******************/
 const scoreLions = (14 + 13 + 17 + 15 + 16) / 5
@@ -113,7 +113,7 @@ console.log(scoreLions)
 const scoreDragons = (18 + 13 + 10 + 8 + 12) / 5
 console.log(scoreDragons)
 
-if (scoreLions === scoreDragons && scoreLions >= 15 && scoreDragons >= 15) {
+if ((scoreLions === scoreDragons) && scoreLions >= 15 && scoreDragons >= 15) {
     console.log('Draw !!')
 } else if (scoreLions > scoreDragons && scoreLions >= 15) {
     console.log('Winner is Lions!!')
@@ -122,3 +122,16 @@ if (scoreLions === scoreDragons && scoreLions >= 15 && scoreDragons >= 15) {
 } else {
     console.log('Match Dismiss !!')
 } 
+
+// minimize calculation
+/* if (scoreLions >= 15 && scoreDragons >= 15) {
+    if (scoreLions === scoreDragons) {
+        console.log('Draw !!')
+    } else if (scoreLions > scoreDragons) {
+        console.log('Winner is Lions!!')
+    } else {
+        console.log('Winner is Dragons!!')
+    }
+} else {
+    console.log('Match Dismiss !!')
+} */

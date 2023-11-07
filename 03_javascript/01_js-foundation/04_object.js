@@ -21,6 +21,7 @@ console.log(student.isGoodAtGames)
 console.log(student['firstName'])
 console.log(student['friends'][0]) 
 
+// dynamic string using template literal :
 // Mostafizur is a programmer and he has 4 friends. Bappy is his best friend.
 console.log(`${student.firstName} is a ${student.job} and he has ${student.friends.length} friends. ${student.friends[3]} is his best friend.`)
 
