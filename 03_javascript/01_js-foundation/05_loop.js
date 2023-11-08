@@ -3,10 +3,23 @@ for (let i = 0; i < 10; i++) {
     console.log('Mostafizur Rahman Fuad')
 }
 
-for (let i = 0; i <= 100; i += 10) {
+// write a program to print 1 - 20
+for (let i = 1; i <= 20; i++) {
     console.log(i)
 }
 
+// 10 20 30 40 50 60 70 80 90 100
+for (let i = 10; i <= 100; i += 10) {
+    console.log(i)
+}
+
+
+// write a program to print 10 - 1
+for (let i = 10; i > 0; i--) {
+    console.log(i)
+}
+
+// traverse an array
 const friendsArr = [
     'Siam',
     'Junnun',
@@ -37,7 +50,8 @@ console.log(arr)
 
 const arr2 = []
 for (let i = 0; i < arr.length; i++) {
-    arr2.push(arr[i])
+    // arr2.push(arr[i])
+    arr2.push(typeof arr[i])
 }
 console.log(arr2)
 
@@ -54,21 +68,21 @@ console.log(ages)
 // continue : skip kora
 // break : loop break kora
 for (let i = 0; i < 15; i++) {
-    if (i % 3 == 0) continue
+    if (i % 3 === 0) continue
     console.log(i)
-    if (i == 10) break
+    if (i === 10) break
 }
 
 
 // star pattern : nasted loop
 /*
- *******
- ******* 
- ******* 
- ******* 
- ******* 
+ *****
+ ***** 
+ *****
+ *****
+ *****
  */
-let n = 7
+let n = 5
 let star = ''
 for (let row = 0; row < n; row++) {
     for (let col = 0; col < n; col++) {

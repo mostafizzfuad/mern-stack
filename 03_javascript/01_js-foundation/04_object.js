@@ -55,7 +55,7 @@ const collageStudent = {
 console.log(collageStudent.calculateAge()) // [method je call korbe this tar, jemon : akhane calculateAge() method ke collageStudent object ta call korece, tai this keyword ta akhane collageStudent object ke indicate korce]
 console.log(collageStudent.greetings())
 
-// when we will change collageStudent2.property . it's also change the collageStudent.property (collageStudent2 object ta collageStudent er reference hisebe memory te kaj korce)
+// when we will change collageStudent2.property . it's also change the collageStudent.property (collageStudent2 object ta collageStudent er reference hisebe memory te kaj korce, collageStudent2 object ta alada kore kono mamory block neini)
 const collageStudent2 = collageStudent
 collageStudent2.firstName = 'Irina' // muted or re-assigned
 console.log(collageStudent)
@@ -65,7 +65,7 @@ console.log(collageStudent2.greetings()) // function er this keyword akhn collag
 
 
 
-
+// object er moddhe kono function declare korle take method bole.
 /// arrow function doesn't have this keyword
 /// regular function er moddhe this undefined
 /// object er moddhe this keyword available. so, object er moddhe kokhonoi arrow function use kora jabe na.

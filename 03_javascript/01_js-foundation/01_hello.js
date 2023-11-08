@@ -1,4 +1,4 @@
-// JS : JS is a high level , multi paradine, interprated, object oriented, functional programming language.
+// JS : JS is a high level , multi paradigm, interpreted, object oriented, functional programming language.
 
 // JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997. ECMAScript is the official name of the language. ECMAScript versions have been abbreviated to ES1, ES2, ES3, ES5, and ES6.
 
@@ -6,18 +6,20 @@
 
 console.log("Hello JS")
 console.log('Hello JS')
-console.log(`Hello JS`)
+console.log(`Hello JS`) 
 
 // variables : let varName = value;  [don't use var keyword for declaration a variable & use camelCase for variable names]
 // let and const - block scope
 // var - function scope
 
-// don't use this type of variableName : 
-    // let 10world = 'hello world'
-    // let bf&gf = 'unknown'
-    // let new-number = 10
-    // let function = 20; // any keyword
-    // let Person = 'mostafizur' // only class name declaration e variable name capitalize use kora hoi
+// variable naming restrictions : 
+    // let 10cars = 10
+    // let me&you = 'love'
+    // let function = 10 // any keyword
+    // let false = 10 // any keyword
+    // let player-number = 10
+    // let Classroom = 'A3' (only class name declaration e variable name capitalize hisebe use kora hoi)
+    // let age1 = 21 (not error but don't use)
 
 
 let myName = 'Mostafizur Rahman'
@@ -31,19 +33,10 @@ and
 I am a
 developer`)
 
-// no keyword using variable
+// no keyword using variable : don't use
 likes = 150
 console.log(likes) // its working but this type of variable cannot create a scope
-
-// variable naming restrictions : 
-    // let 10cars = 10
-    // let me&you = 'love'
-    // let function = 10 // any keyword
-    // let false = 10 // any keyword
-    // let player-number = 10
-    // let Classroom = 'A3' (only class name declaration e variable name capitalize hisebe use kora hoi)
-    // let age1 = 21 (not error but don't use)
-
+// Expected output: 150
 
 // data types : (value has type, not variable. variable just a name)
 
@@ -71,6 +64,21 @@ let age = null
 console.log(typeof age) // object
 console.log(typeof NaN) // number
 console.log(typeof Number('I love you'))
+
+// let , const, var :
+let testNumber = 10 // declare variable & assign value
+testNumber = 20 // mutate or re-assign value
+
+// let testNumber = 30 // can't redeclare block scope variable
+
+// let , const : block scope
+// var : function scope
+
+// var :
+console.log(ourNumber) // undefined
+var ourNumber = 10 // declare variable & assign value
+ourNumber = 20 // re-assign
+var ourNumber = 30 // can't error
 
 // const : re-assign not possible in a constant variable.  (obossoi value assign kora lagbe const variable declaration er somoi)
 const myAge = 25

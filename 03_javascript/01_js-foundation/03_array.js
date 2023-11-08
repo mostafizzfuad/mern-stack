@@ -26,6 +26,7 @@ console.log(years[years.length - 1]) // find last element in array
 // array muted / re-assigned elements
 years[1] = 1998
 console.log(years[1])
+years[years.length - 1] = 2023 // muted last index
 
 // array length
 console.log(friends.length)
