@@ -21,6 +21,9 @@ console.log(summation(arr))
 
 /******** debag option vs code **********
  * 
+ * ctrl shift d - run and debug - select node js
+ * watch : click + button and add variables which value you want to watch
+ * 
  * continue : direct run korbe , kono kichu check korbe na (F5)
  * step over : check line by line (F10)
  * step into : function er moddhe dhukbe (F11)

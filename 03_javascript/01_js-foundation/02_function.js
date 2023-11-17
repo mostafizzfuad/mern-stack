@@ -226,3 +226,31 @@ console.log(multiPro(10)(5)(3)(2)(5))
 
 const multiProUltra = (a, b, c, x, y) => a * b * c * x * y
 console.log(multiProUltra(10, 5, 3, 2, 5))
+
+
+
+
+
+// exercise
+function sumFunction(arr) {
+    let sum = 0
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    return sum
+}
+
+function subFunction(arr, total) {
+    const subResult = []
+    for (let i = 0; i < arr.length; i++) {
+        subResult.push(total - arr[i])
+    }
+    return subResult
+}
+
+const arr = [1, 2, 3, 4, 5]
+let total = sumFunction(arr)
+console.log(total)
+let result = subFunction(arr, total)
+console.log(result)
+
