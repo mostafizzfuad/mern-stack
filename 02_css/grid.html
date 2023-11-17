@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        /*********** when using flex ***********/
+        /* header {
+            display: flex;
+            gap: 4%;
+        }
+        .header-left {
+            flex-basis: 53%;
+            background: red;
+            height: 300px;
+        }
+        .header-right {
+            flex-basis: 43%;
+            background: green;
+            height: 300px;
+        } */
+
+        /*********** when using grid ***********/
+        header {
+            display: grid;
+            grid-template-columns: 53% 43%;
+            gap: 4%;
+        }
+        .header-left {
+            background: red;
+            height: 300px;
+        }
+        .header-right {
+            background: green;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="header-left">left</div>
+        <div class="header-right">right</div>
+    </header>
+</body>
+</html>
