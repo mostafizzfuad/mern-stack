@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Areas</title>
+    <style>
+        .collage {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .collage-image {
+            border: 1rem solid #003f47;
+        }
+
+        /* parent */
+        .collage-images { 
+            display: grid;
+            grid-template-areas:
+                "c1 c2 c3"
+                "c4 c5 cv"
+                "ch ch cv"
+                "ch ch cv";
+            gap: 2rem;
+        }
+
+        .collage-image:nth-child(1) {
+            grid-area: c1;
+        }
+
+        .collage-image:nth-child(2) {
+            grid-area: c2;
+        }
+
+        .collage-image:nth-child(3) {
+            grid-area: c3;
+        }
+
+        .collage-image:nth-child(4) {
+            grid-area: c4;
+        }
+
+        .collage-image:nth-child(5) {
+            grid-area: c5;
+        }
+
+        .collage-image:nth-child(6) {
+            grid-area: ch;
+        }
+
+        .collage-image:nth-child(7) {
+            grid-area: cv;
+        }
+
+        .collage-image img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+            filter: saturate(0) brightness(0.5);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .collage-image:hover img {
+            filter: saturate(1) brightness(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="collage">
+        <div class="collage-images">
+            <div class="collage-image">
+                <img src="./images/c1.jpg" />
+            </div>
+            <div class="collage-image">
+                <img src="./images/c2.jpg" />
+            </div>
+            <div class="collage-image">
+                <img src="./images/c3.jpg" />
+            </div>
+            <div class="collage-image">
+                <img src="./images/c4.jpg" />
+            </div>
+            <div class="collage-image">
+                <img src="./images/c5.jpg" />
+            </div>
+            <div class="collage-image">
+                <img src="./images/ch.jpg" />
+            </div>
+            <div class="collage-image">
+                <img src="./images/cv.jpg" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
