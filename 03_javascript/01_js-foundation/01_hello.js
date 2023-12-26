@@ -4,9 +4,11 @@
 
 // ECMA : European Computer Manufacturers Association.
 
-console.log("Hello JS")
-console.log('Hello JS')
-console.log(`Hello JS`) 
+// Javascript official name : ECMAScript (ES).
+
+console.log("Hello JS") // double quotation
+console.log('Hello JS') // single quotation
+console.log(`Hello JS`) // backtick
 
 // variables : let varName = value;  [don't use var keyword for declaration a variable & use camelCase for variable names]
 // let and const - block scope
@@ -26,8 +28,10 @@ let myName = 'Mostafizur Rahman'
 console.log('Hello ' + myName) // string concatenation
 console.log(`Hello ${myName}`) // template literal : backtick
 
+// multiline using escape sequences
 console.log('I am Mostafizur \nand \nI am a \ndeveloper')
 console.log('\n')
+// multiline using template literals
 console.log(`I am Mostafizur
 and
 I am a
@@ -42,9 +46,9 @@ console.log(likes) // its working but this type of variable cannot create a scop
 
 /***** data types : (premitive , non-premitive)
  * premitive types :
- * 1. number
+ * 1. number (integer, float)
  * 2. string
- * 3. boolean
+ * 3. boolean (true, false)
  * 4. null
  * 5. undefined : variable declare kora hoiche but value assign kora hoini
  * 6. symbol
@@ -87,6 +91,12 @@ console.log(myAge)
 // ---------------- JS (2)---------------------- //
 
 // arithmetics operator (+ - * / % ** ++ --)
+
+// string concatenation
+let firstName = 'Mostafizur Rahman'
+let lastName = 'Fuad'
+console.log(firstName + ' ' + lastName)
+
 // assignment operator (= += -= *= /= %=)
 // comparison operator (< , <= , > , >=)
 
@@ -122,7 +132,7 @@ if (mangoPrice <= 50) {
     console.log('Apple khabo')
 }
 
-// grade calculation program
+// exercise : grade calculation program
 
 
 // type conversion (manually) and coercion (autometically)
@@ -132,14 +142,18 @@ const str = '10'
 const num = 20
 const isGood = true
 
-console.log(str, typeof Number(str))
+console.log(str, typeof str)
+console.log(Number(str), typeof Number(str))
 console.log(typeof Number("500"))
-console.log(typeof Number("Fuad"))
+
+console.log(Number("Fuad")) // NaN
+console.log(typeof NaN) // number
 
 console.log(typeof String(num))
+console.log(typeof String(1000))
 console.log(typeof String(isGood))
 
-console.log(typeof NaN) // number
+
 
 
 
@@ -154,8 +168,8 @@ console.log('Baby' + 20) // Baby20
 console.log('Baby' - 20) // NaN
 console.log('Baby' * 20) // NaN
 console.log('Baby' / 20) // NaN
-console.log('Baby' + ' ' + 'Babu')
-console.log('Baby' - ' ' - 'Babu') // NaN
+console.log('Baby' + 'Babu') // BabyBabu
+console.log('Baby' - 'Babu') // NaN
 
 // coercion (autometically)
 console.log(200 - '100') // coercion (autometically)
