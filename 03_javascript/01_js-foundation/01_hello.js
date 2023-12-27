@@ -67,6 +67,7 @@ let herAge // typeof herAge : undefined
 let age = null
 console.log(typeof age) // object
 console.log(typeof NaN) // number
+console.log(typeof Infinity) // number
 console.log(typeof Number('I love you'))
 
 // let , const, var :
@@ -102,7 +103,16 @@ console.log(firstName + ' ' + lastName)
 
 // operator precedence
 console.log(30 + (10 - 5) * 2) // 40
-console.log(2024 > 2002 + 30) // false
+console.log(2024 > 2030 - 30) // true
+
+
+
+
+
+
+
+
+
 
 // if else : multiple output dorkar hole sudhu if , single output dorkar hole else if use korbo
 const mangoPrice = 60
@@ -142,9 +152,10 @@ const str = '10'
 const num = 20
 const isGood = true
 
-console.log(str, typeof str)
-console.log(Number(str), typeof Number(str))
-console.log(typeof Number("500"))
+console.log(str, typeof str) // 10 string
+console.log(Number(str), typeof Number(str)) // 10 number
+
+console.log(typeof Number("500")) // number
 
 console.log(Number("Fuad")) // NaN
 console.log(typeof NaN) // number
@@ -154,16 +165,21 @@ console.log(typeof String(1000))
 console.log(typeof String(isGood))
 
 
-
+console.log(typeof Number("500")) // number
+console.log(typeof String(1000)) // string
+console.log(typeof String(true)) // string
 
 
 // -------------------------------- //
+
+// normal arithmetic
 console.log(10 + 10)
 console.log(20 - 10)
 console.log(20 * 5)
 console.log(20 / 3)
 console.log(20 % 3)
 
+// string concat or NaN 
 console.log('Baby' + 20) // Baby20
 console.log('Baby' - 20) // NaN
 console.log('Baby' * 20) // NaN
@@ -175,7 +191,8 @@ console.log('Baby' - 'Babu') // NaN
 console.log(200 - '100') // coercion (autometically)
 console.log(200 * '100') // coercion (autometically)
 console.log(200 / '100') // coercion (autometically)
-console.log('200' + 100)
+console.log('200' + 100) // 200100
+
 // note : + and string thakle sob kichu string banabe.
 
 
@@ -363,4 +380,5 @@ let myPhone;
 console.log(typeof myPhone) // undefined : variable value not assigned
 
 let myPhoneNumber = null; // null : variable value assign as null
+console.log(typeof myPhoneNumber) // object
 
