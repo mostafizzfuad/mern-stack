@@ -33,7 +33,7 @@ function oddNumberFinder(number) { // number = parameter
     }
 } 
 console.log(oddNumberFinder(15)) // function call / run / invoke [15 = argument]
-// function e jodi return keyword use kora hoi, but function jodi return korar jonno kichu khuje na pai, tahole undefined return korbe.
+// function jodi return na kore, but tobuo amra sei function ke consol.log() kori tahole undefined print korbe.
 // function return keyword pele okhanei return kore dei, nicher line gula ar execute korena...
 
 // sum of three numbers
@@ -55,14 +55,14 @@ const juiceFactory = function (apples, oranges) {
 }
 console.log(juiceFactory(10, 5))
 
-// function expression like variables
+// function expression just like a variable.
 /* console.log(a) // undefined
 let a = 20  */
 
 
 // function declarations : function er upore ba niche jekono jaigai console log kora jabe.
 
-// function expression : function er upore sei function ke call dewa jabe na karon, function expression just like variable
+// function expression : function er upore sei function ke call dewa jabe na karon, function expression just like a variable
 
 // arrow function : function expression er moto kaj korbe. function keyword ta kete dibo then parameter er pore () => use korbo. arrow function e this keyword related akta problem ache. tai kichu kichu jaigai arrow function ke avoid kora lagbe.
 
