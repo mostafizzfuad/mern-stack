@@ -1,7 +1,8 @@
-// "use strict"
-// const private = 20
-// const interface = 'audio'
-// console.log(private)
+/* "use strict"
+const private = 20  // error declaration, when using "use strict"
+const interface = 'audio' // error declaration, when using "use strict"
+console.log(private) // error
+console.log(interface) // error */
 
 
 // function declarations
@@ -109,14 +110,30 @@ console.log(heroMaker2(22, true))
 
 
 /***** function declaration, expression and arrow function ******/
-// function declarations
-const myBirthYear = 1998;
 
-function ageCalculators(birthYear) {
-    const age = 2023 - birthYear
+// function declaration (type 1)
+function ageCalculator(birthYear) {
+    const age = 2024 - birthYear
     return age;
 }
-console.log(ageCalculators(myBirthYear))
+
+// function expression (type 2)
+const ageCalculator = function (birthYear) { // [parameter = birthYear]
+    const age = 2024 - birthYear
+    return age;
+}
+
+// arrow function (type 3)
+const ageCalculator = (birthYear) => {
+    const age = 2024 - birthYear
+    return age;
+}
+
+// arraw function (minimize)
+const ageCalculator = (birthYear) => 2024 - birthYear
+
+const myBirthYear = 1998;
+console.log(ageCalculator(myBirthYear)) // call / invoke  [argument = myBirthYear]
 
 
 

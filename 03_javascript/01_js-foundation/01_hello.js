@@ -223,24 +223,24 @@ console.log(z) // -1011
 
 // truthy value and falsy value
 // falsy value : 0 , '' , undefined , null , NaN
-console.log(Boolean(0))
-console.log(Boolean(''))
-console.log(Boolean(undefined))
-console.log(Boolean(null))
-console.log(Boolean(NaN))
+console.log(Boolean(0)) // false
+console.log(Boolean('')) // false
+console.log(Boolean(undefined)) // false
+console.log(Boolean(null)) // false
+console.log(Boolean(NaN)) // false
 
 // truthy value
-console.log(Boolean(1))
-console.log(Boolean(-1))
-console.log(Boolean(' ')) 
-console.log(Boolean('hello')) 
-console.log(Boolean({})) 
+console.log(Boolean(1)) // true
+console.log(Boolean(-1)) // true
+console.log(Boolean(' ')) // true
+console.log(Boolean('hello')) // true
+console.log(Boolean({})) // true 
 
 
 // example of truthy and falsy value
 let money = 10
-if (money) {
-    console.log('I have money')
+if (money) { // 10 = true
+    console.log('I have money') // execute
 } else {
     console.log('I have no money')
 }
@@ -276,15 +276,33 @@ if (siamAge === 21) { // js doesn't type coercion, strict
 
 
 // input in js 
-/* const favoriteNumber = Number(prompt('What is your favorite number ?'))
-console.log(favoriteNumber) */
+const favoriteNumber = prompt('What is your favorite number ?') // return as a string
+console.log(favoriteNumber) 
 
 
 // nasted condition
 
 
 
-// logical operator (&& , ||)
+// logical operator (&& , || !)
+
+// logical or (||)
+console.log(true || true) // true
+console.log(true || false) // true
+console.log(false || true) // true
+console.log(false || false) // false
+
+// logical and (&&)
+console.log(true && true) // true
+console.log(true && false) // false
+console.log(false && true) // false
+console.log(false && false) // false
+
+// logical not (!)
+console.log(!true) // false
+console.log(!false) // true
+
+
 // example 1
 const saveMoney = 150000
 const ownHouse = true
@@ -313,15 +331,59 @@ year % 400 === 0
 year % 4 === 0 && year % 100 !== 0
 */
 let year = 2024
-if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
     console.log('leap year')
 } else {
     console.log('not leap year')
 }
 
 
-// switch case
 
+// switch case structure
+switch(expression) {
+    case x:
+        // code block
+        break;
+    case y:
+        // code block
+        break;
+    default:
+        // code block
+}
+
+
+// switch case program : Day spelling
+let day = "sunday"
+
+switch (day) {
+    case "sunday": 
+        console.log("Today is " + day)
+        break
+    
+    case "monday": 
+        console.log("Today is " + day)
+        break
+    
+    case "tuesday":  
+        console.log("Today is " + day)
+        break
+    
+    case "wednesday":  
+        console.log("Today is " + day)
+        break
+    
+    case "thursday":  
+        console.log("Today is " + day)
+        break
+    
+    case "friday": 
+        console.log("Today is " + day)
+        break
+    
+    default:
+        console.log("Today is " + day)
+    
+}
 
 // statement vs expression
 /*
@@ -337,7 +399,11 @@ let result = 10 - 2 * 3; // produce value
 if (result === 0){} // cann't produce value
 
 
-// ternary operator: find large between two numbers
+// ternary operator: 
+// condition    ?	print (true)  :	  print (false)
+
+
+//find large between two numbers
 const num1 = 40
 const num2 = 60
 const whoIsGreater = num1 > num2 ? `${num1} large` : `${num2} large`
