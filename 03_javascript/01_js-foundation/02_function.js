@@ -10,19 +10,56 @@ console.log(interface) // error */
 // arrow function
 
 
-fuad()
-
+hello()
 /********* function declarations (type 1)  ***********/
-function fuad() {
-    console.log('Hello Masud')
+// Function Structure (1) :  no parameter and no return
+function hello() {
+    console.log('Hello Mostafizur !!')
 }
-// fuad()
+hello()
 
-function addTwoNumbers(num1, num2) {
+// Function Structure (2) :  use parameter but no return
+function addTwoNumbers(num1, num2) { // parameter
     const sum = num1 + num2
-    return sum
+    console.log(sum)
 }
-console.log(addTwoNumbers(10, 20))
+addTwoNumbers(10, 20) // invoke & argument pass
+
+// Function Structure (3) :  use parameter with return
+function addTwoNumbers(num1, num2) { // parameter
+    const sum = num1 + num2
+    return sum // return
+}
+console.log(addTwoNumbers(10, 20)) // invoke & argument pass
+
+// Function Structure (4) :  return type store in a variable then print
+function addTwoNumbers(num1, num2) { // parameter
+    const sum = num1 + num2
+    return sum // return
+}
+const resultSum = addTwoNumbers(10, 20) // return type store in result variable
+console.log(resultSum) // print
+
+// Function Structure (5) : passing variable as a argument
+function addTwoNumbers(num1, num2) { // parameter
+    const sum = num1 + num2
+    return sum // return
+}
+
+const num1 = 10
+const num2 = 20
+
+const resultofSum = addTwoNumbers(num1, num2) // passing variable as a argument
+console.log(resultofSum) // print
+
+
+// function jodi return na kore, but tobuo amra sei function ke consol.log() kori tahole undefined print korbe.
+// function return keyword pele okhanei return kore dei, nicher line gula ar execute korena...
+function addTwoNumbers(num1, num2) { // parameter
+    const sum = num1 + num2
+    // return sum
+}
+console.log(addTwoNumbers(10, 20)) // undefined : because this function has no return
 
 
 // find odd numbers using function
@@ -34,8 +71,6 @@ function oddNumberFinder(number) { // number = parameter
     }
 } 
 console.log(oddNumberFinder(15)) // function call / run / invoke [15 = argument]
-// function jodi return na kore, but tobuo amra sei function ke consol.log() kori tahole undefined print korbe.
-// function return keyword pele okhanei return kore dei, nicher line gula ar execute korena...
 
 // sum of three numbers
 function addThreeNumbers(a, b, c) {
@@ -112,7 +147,7 @@ console.log(heroMaker2(22, true))
 /***** function declaration, expression and arrow function ******/
 
 // function declaration (type 1)
-function ageCalculator(birthYear) {
+function ageCalculator(birthYear) { // [parameter = birthYear]
     const age = 2024 - birthYear
     return age;
 }
@@ -124,7 +159,7 @@ const ageCalculator = function (birthYear) { // [parameter = birthYear]
 }
 
 // arrow function (type 3)
-const ageCalculator = (birthYear) => {
+const ageCalculator = (birthYear) => { // [parameter = birthYear]
     const age = 2024 - birthYear
     return age;
 }
@@ -182,6 +217,7 @@ function juiceMaker(apples, oranges) {
     return `${juice} ltr. juice is ready using ${applePices} apple pices and ${orangePices} orange pices`
 }
 console.log(juiceMaker(15, 10))
+// expected output : 50 ltr. juice is ready using 60 apple pices and 40 orange pices
 
 // side effect of a function : kono function call/invoke korar por function ta return korar age kotobar queue te chilo, setai hocche oi function er side effect. example : juiceMaker() function ta call korar por return howar age 2 bar queue te chilo. karon, fruitCutter() function ta 2 bar call hoye return korece. then juiceMaker() function ta return korece. same vabe fruitCutter() function ta 0 times queue te chilo. so fruitCutter() function side effect = 0
 
@@ -206,7 +242,7 @@ function brickCalculation(totalFloors) {
     brickForAllFloors += extraBricks
     return `total bricks needed : ${undergroundBricks + brickForAllFloors}`
 }
-console.log(brickCalculation(73))
+console.log(brickCalculation(73)) // total bricks needed : 792000
 
 
 // currying function
