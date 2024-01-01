@@ -57,6 +57,7 @@ console.log(lastBenchers.length)
 console.log(lastBenchers[1])
   
 lastBenchers.push('Hasib') // array push - add element in the end
+// lastBenchers.push('rafiq', 'abir') // multiple push
 console.log(lastBenchers)
 console.log(lastBenchers.length)
 
@@ -78,7 +79,7 @@ console.log(lastBenchers.indexOf('Junnun'))
 console.log(lastBenchers.indexOf('Mostafizur'))
 console.log(lastBenchers.indexOf('Rifat')) // jei element er index amra find korte chacchi sei element jodi array te na thake tahole tar index dekhabe -1
 
-// finding element : element jodi thake tahole result true otherwise false
+// finding element : element jodi array te thake tahole result true otherwise false
 console.log(lastBenchers.includes('Siam')) // true
 console.log(lastBenchers.includes('Rifat')) // false
 

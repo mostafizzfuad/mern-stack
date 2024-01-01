@@ -21,6 +21,9 @@ console.log(student.isGoodAtGames)
 console.log(student['firstName'])
 console.log(student['friends'][0]) 
 
+const nameKey = 'Name'
+console.log(student['first' + nameKey])
+
 // dynamic string using template literal :
 // Mostafizur is a programmer and he has 4 friends. Bappy is his best friend.
 console.log(`${student.firstName} is a ${student.job} and he has ${student.friends.length} friends. ${student.friends[3]} is his best friend.`)
@@ -41,7 +44,7 @@ const collageStudent = {
     firstName : 'Eishita',
     lastName : 'Afrin',
     birthYear : 1998,
-
+    // object er moddhe kono function likhle take sei object er method bole
     calculateAge : function() {
         return 2023 - this.birthYear // method ke je call kore, this keyword take indicate kore [method je call korbe this tar] 
         /// arrow function doesn't have this keyword
