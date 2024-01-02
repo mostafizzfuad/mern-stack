@@ -39,6 +39,7 @@ console.log(summation(arr))
  * live-server
  * ctrl c (for stop live-server) 
  * clear
+ * minimize terminal : ctrl j
 /********************************* */
 
 

@@ -73,6 +73,28 @@ for (let i = 0; i < 15; i++) {
     if (i === 10) break
 }
 
+// example : 2 
+const hello = [10, true, 21, 'a', 'b', false, 55, true, 'c']
+// continue
+for (let i = 0; i < hello.length; i++) {
+    if (typeof hello[i] === 'string') continue
+    console.log(hello[i], typeof hello[i])
+}
+// break
+for (let i = 0; i < hello.length; i++) {
+    if (typeof hello[i] === 'string') break
+    console.log(hello[i], typeof hello[i])
+}
+
+
+// nasted loop
+for (let i = 1; i <= 5; i++) {
+    console.log(`Step --- ${i}`)
+    for (let j = 1; j <= i; j++) {
+        console.log(`Run --------- ${j}`)
+    }
+}
+
 
 // star pattern : nasted loop
 /*
